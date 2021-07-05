@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {RatingValueType} from "./components/Rating/Rating";
-import Accordeon from "./components/Accordeon/Accordeon";
-import UnControlledAccordeon from "./components/UnControlledAccordeon/UnControlledAccordeon";
-import OnOff from "./components/OnOff/OnOff";
-import UnControlledOnOff from "./components/UnControlledOnOff/UnControlledOnOff";
+import {Clock} from "./components/Clock/Clock";
 
 
 function App() {
@@ -20,31 +17,7 @@ function App() {
     return (
 
         <div className="App">
-            {/*<Accordeon*/}
-            {/*    title={"Menu"}*/}
-            {/*    collapsed={collapsed}*/}
-            {/*    changeCollapsed={collapsedData}/>*/}
-            {/*    <hr/>*/}
-            {/*    <Accordeon*/}
-            {/*    title={"Users"}*/}
-            {/*    collapsed={collapsed}*/}
-            {/*    changeCollapsed={collapsedData}/>*/}
-            {/*    <hr/>*/}
-            {/*<UnControlledAccordeon title={"Menu"}/>*/}
-            {/*<UnControlledAccordeon title={"Users"}/>*/}
-
-            <OnOff on={on} setOn={ setOn }/>
-            <UnControlledOnOff onChange={setOn} />
-            {on.toString()}
-
-
-            {/*<Rating value={1}/>
-            <Rating value={2}/>*/}
-            {/*<Rating value={ratingValue} setRatingValue={setRatingValue}/>*/}
-            {/*<Rating value={4}/>
-            <Rating value={5}/>
-            <hr />*/}
-            {/*<UnControlledRating />*/}
+            <Clock />
 
         </div>
     );
