@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
 import {Clock} from "./components/Clock/Clock";
+import {ResetEffect} from "./components/ResetEffect";
+import {OnKeysTracker} from "./components/OnKeysTracker";
+import {SetTimooutExample} from "./components/SetTimooutExample";
 
 
 function App() {
     return (
 
         <div className="App">
-            <Clock mode={'digital'}/>
+            {/*<Clock mode={'digital'}/>
             <Clock mode={'analog'}/>
-
+*/}
+            {/*<ResetEffect />*/}
+            {/*<OnKeysTracker />*/}
+            <SetTimooutExample />
         </div>
     );
 }
